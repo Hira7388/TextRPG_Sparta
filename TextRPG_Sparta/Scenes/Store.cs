@@ -25,6 +25,7 @@ namespace TextRPG_Sparta.Scenes
 
         public override void Show()
         {
+            _currentMode = StoreMode.main; // 상점에 들어올 때마다 main 모드로 들어온다.
             while (true) // 플레이어가 0번으로 나가기 전까지 상점 씬에 머무름
             {
                 _coreUI.ShowHeader(SceneTitle, SceneDescription);
