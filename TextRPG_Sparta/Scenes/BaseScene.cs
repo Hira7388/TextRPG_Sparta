@@ -18,8 +18,8 @@ namespace TextRPG_Sparta.Scenes
         protected Dictionary<string, string> _menuOptions; // 메뉴 출력
         protected Dictionary<string, Action> _menuActions; // 메뉴 기능
 
-        protected virtual void InitializeMenuOptions() { } // 자식 클래스가 매뉴 옵션을 구성하도록 강제 (기본적으로 비어있음)
-        protected virtual void InitializeMenuActions() { } // 자식 클래스가 매뉴 액션을 구성하도록 강제
+        protected virtual void InitializeMenuOptions() { } // 메뉴 옵션을 출력하는 메서드
+        protected virtual void InitializeMenuActions() { } // 메뉴 옵션에 따른 액션을 실행하는 메서드
         public BaseScene(Player player, CoreUI coreUI)
         {
             this._player = player;
